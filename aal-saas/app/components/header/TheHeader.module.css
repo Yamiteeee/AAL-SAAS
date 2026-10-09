@@ -1,0 +1,108 @@
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: rgba(14, 14, 17, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1f1f26;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.scrolled {
+  background-color: rgba(14, 14, 17, 0.95);
+  border-bottom-color: #272732;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  text-decoration: none;
+}
+
+.brandDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.brandName {
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.brandBadge {
+  font-size: 0.65rem;
+  font-family: monospace;
+  font-weight: 700;
+  color: #8c8c9a;
+  background: #18181f;
+  border: 1px solid #272733;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+@media (max-width: 640px) {
+  .nav {
+    display: none;
+  }
+}
+
+.navLink {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #9292a0;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.navLink:hover {
+  color: #ffffff;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+.btnPrimary {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #0e0e11;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 0.45rem 0.95rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    background-color 0.15s ease;
+}
+
+.btnPrimary:hover {
+  background: #e2e2e6;
+  transform: translateY(-1px);
+}
